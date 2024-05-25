@@ -1,6 +1,6 @@
 # A Ruby workspace using a dev container
 
-This repository is a Ruby workspace supported by a cross-platform Docker-based dev container. The header (`.h`) files should be placed under the `include/` folder, while the implementation (`.cpp`) files should be placed under the `src/` folder.
+This repository is a cross-platform Docker-based dev container.
 
 ## Requirements
 
