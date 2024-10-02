@@ -1,6 +1,6 @@
 {
   "name": "Ruby/RoR Workspace",
-  "image": "ghcr.io/rails/devcontainer/images/ruby:3.3.0",
+  "image": "ghcr.io/rails/devcontainer/images/ruby:3.3.5",
   "onCreateCommand": "echo 'gem: --no-document' >> ~/.gemrc && sudo apt update && sudo apt -y install sqlite3 && curl -fsSL https://bun.sh/install | bash && gem install rails foreman",
   "postCreateCommand": "ruby -v && rails -v",
   "customizations": {
