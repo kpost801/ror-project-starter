@@ -1,2 +1,31 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
+
+.card {
+  padding-top: 3rem;
+  margin-left: 2rem;
+  margin-right: 5rem;
+}
+
+
+
+ul li {
+  margin-left: 10px;
+  list-style: none;
+  display: inline;
+  margin: 0px 20px 0px 0px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: 2rem;
+  margin-right: 5rem;
+}
+
+.edit {
+  margin-left: 2rem;
+  margin-right: 5rem;
+}
+

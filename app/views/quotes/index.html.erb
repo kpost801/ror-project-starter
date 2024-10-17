@@ -1,0 +1,20 @@
+<p style="color: green"><%= notice %></p>
+
+<header class="flex">
+  <h1>Quotes</h1>
+  <ul>
+    <li><%= link_to new_quote_path, class: "btn btn-primary" do %><i class="bi bi-plus"></i> New Quote<% end %></li>
+  </ul>
+</header>
+
+
+<div id="quotes">
+  <% @quotes.each do |quote| %>
+    <%= render quote %>
+    <p>
+      <%= link_to "Show this quote", quote %>
+    </p>
+  <% end %>
+</div>
+
+
