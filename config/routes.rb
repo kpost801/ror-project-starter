@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :quotes 
+  resources :quotes do
+        member do
+                    post 'like'
+        end
+  end
 
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

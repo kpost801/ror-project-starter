@@ -23,6 +23,16 @@
   </div>
 
   <div>
+    <%= form.label :year, class: "form-label"%>
+    <%= form.text_field :year, class:"form-control" %>
+  </div>
+
+  <div>
+    <%= form.label :notes, class: "form-label"%>
+    <%= form.text_field :notes, class:"form-control" %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>

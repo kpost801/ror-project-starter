@@ -8,12 +8,13 @@ class QuotesController < ApplicationController
 
   # GET /quotes/1 or /quotes/1.json
   def show
+    @quote = Quote.find(params[:id])
   end
 
   #counting how many votes from user
   def vote 
     @quote = Quote.find(params[:id])
-    @quote.increment!(:votes)
+    @quote.increment!(:vote)
 
     respond_to do |format|
       format.html {redirect_to @quote}
@@ -27,6 +28,11 @@ class QuotesController < ApplicationController
 
   # GET /quotes/1/edit
   def edit
+  end
+
+  #number of likes displayed
+  def like
+    @quote = Quote.find(params[:id])
   end
 
   # POST /quotes or /quotes.json
@@ -75,6 +81,6 @@ class QuotesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def quote_params
-      params.require(:quote).permit(:saying, :said_by)
+      params.require(:quote).permit(:saying, :said_by, :year, :notes)
     end
 end
